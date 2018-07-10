@@ -6,7 +6,7 @@
 		<section class="content">
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="box">
+					<div class="box box-info">
 						<div class="box-header">
 							<a href="/admin/users/add" class="btn btn-info">Add User</a>
 							<div class="btn-group">
@@ -50,5 +50,22 @@
 		</section>
 	</div>
 </template>
+<script>
+export default {
+	data: () => ({
+		
+	}),
+	created() {
+		let dataTables = document.createElement('script')
+		dataTables.setAttribute('src', '../js/jquery.dataTables.min.js')
+		document.head.appendChild(dataTables)
 
-<script src="../js/jquery.dataTables.min.js"></script>
+		let dataTables_bootstrap = document.createElement('script')
+		dataTables_bootstrap.setAttribute('src', '../js/dataTables.bootstrap.min.js')
+		document.head.appendChild(dataTables_bootstrap)
+	},
+	methods: {
+
+	}
+}
+</script>
